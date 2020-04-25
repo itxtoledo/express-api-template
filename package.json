@@ -1,0 +1,17 @@
+{
+  "name": "express-api-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/itxtoledo/express-api-template.git",
+  "author": "Gustavo <gugurock50@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esm ./src/index.js",
+    "dev": "nodemon -r esm ./src/index.js"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  }
+}
