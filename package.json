@@ -7,11 +7,12 @@
   "license": "MIT",
   "scripts": {
     "start": "node -r esm ./src/index.js",
-    "dev": "nodemon -r esm ./src/index.js"
+    "start:dev": "nodemon -r esm ./src/index.js"
   },
   "dependencies": {
     "esm": "^3.2.25",
     "express": "^4.17.1",
-    "mongoose": "^5.9.10"
+    "mongoose": "^5.9.10",
+    "nodemon": "^2.0.3"
   }
 }
