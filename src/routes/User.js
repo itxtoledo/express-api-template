@@ -3,14 +3,13 @@ import { inicial, criar, final } from "../controllers/User";
 
 const routes = express.Router();
 
-
 // dominio.com/final
-routes.use("/final", final);
+routes.get("/final", final);
 
 // dominio.com/criar
-routes.use("/criar", criar);
+routes.get("/criar", criar);
 
 // dominio.com
-routes.use("/", inicial);
+routes.get("/", inicial);
 
 export default routes;
