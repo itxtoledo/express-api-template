@@ -5,6 +5,7 @@ const mongourl =
 
 const mongoconfig = {
   useNewUrlParser: true,
+  useCreateIndex: true,
 };
 
 export default async () => {

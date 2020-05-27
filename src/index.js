@@ -1,13 +1,16 @@
 import express from "express";
+import bodyParser from "body-parser";
 import AuthRoutes from "./routes/Auth";
 import UserRoutes from "./routes/User";
-import connectDB from "./services/db";
+import connect from "./services/db";
 
 const app = express();
 
-const db = connectDB();
+const db = connect();
+
+app.use(bodyParser());
 
 app.use(AuthRoutes);
 app.use(UserRoutes);
 
-app.listen(80);
+app.listen(3001);
